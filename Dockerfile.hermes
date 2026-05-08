@@ -1,11 +1,16 @@
-FROM node:22-bookworm
+FROM python:3.11-bookworm
 
-WORKDIR /app
+WORKDIR /workspace
 
 RUN apt-get update && apt-get install -y \
     git \
     bash \
     curl \
     && rm -rf /var/lib/apt/lists/*
+
+RUN pip install \
+    openai \
+    python-dotenv \
+    --break-system-packages
 
 CMD ["bash"]
