@@ -1,28 +1,15 @@
 # Agente DevOps Hermes
 
-Projeto simples para estudo de agentes IA usando:
+Projeto de estudo sobre agentes IA usando:
+
 - Python
 - Docker
+- Ubuntu WSL
 - OpenRouter
-- LLMs
+- Modelo Hermes 3
 - Tools com subprocess
 
-## Funcionalidades
+O objetivo do projeto é entender, de forma prática e simples, os conceitos fundamentais de agentes IA:
 
-- Analisa Dockerfiles
-- Gera documentação automática
-- Executa tools do sistema
-- Usa LLM para interpretação
-
-## Como executar
-
-```bash
-docker run --rm -it \
-  -v "$PWD":/workspace \
-  -w /workspace \
-  --entrypoint bash \
-  hermes-local
-
-
-
-
+```txt
+prompt + contexto + tools + LLM + saída
