@@ -50,7 +50,7 @@ Responda somente com o Markdown final.
 """
 
 response = client.chat.completions.create(
-    model="openai/gpt-4o-mini",
+    model="nousresearch/hermes-3-llama-3.1-70b",
     messages=[
         {
             "role": "user",
